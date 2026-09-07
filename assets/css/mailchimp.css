@@ -1,0 +1,191 @@
+/*
+Theme Name: Melina
+
+MailChimp styles override.
+*/
+.mc4wp-form {
+	padding: 2em;
+	background-color: var(--mc4wp-form__BackgroundColor, var(--secondary__BackgroundColor));
+}
+
+.mc4wp-response {
+	margin-top: 1rem;
+	text-align: center;
+	font-size: var(--font-size--sm);
+}
+
+.mc4wp-response:empty {
+	display: none;
+}
+
+.mc4wp-response p:last-child {
+	margin-bottom: 0;
+}
+
+.subscribe-box__text {
+	margin-bottom: var(--gap--typography);
+	text-align: center;
+}
+
+.subscribe-box__text h4 {
+	margin-bottom: .75em;
+	font-size: var(--h4__FontSize);
+}
+
+.subscribe-box__text h4:last-child {
+	margin-bottom: 0;
+}
+
+.subscribe-box__text > p {
+	letter-spacing: .02em;
+	color: var(--text--secondary__Color);
+	font-size: var(--font-size--sm);
+}
+
+.subscribe-box__text > p:last-child {
+	margin-bottom: 0;
+}
+
+.subscribe-box__form > * {
+	max-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.subscribe-box__form > p {
+	margin-bottom: .75em;
+}
+
+.subscribe-box__form > p:last-child {
+	margin-bottom: 0;
+}
+
+.subscribe-box__form input[type='submit'] {
+	display: block;
+	width: 100%;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+/* MailChimp Form before and after the main content */
+.mailchimp-content-area {
+	position: relative;
+}
+
+.mailchimp-content-area--top {
+	margin-top: var(--gap--gorizontal);
+}
+
+.mailchimp-content-area--bottom {
+	padding: 3em 0;
+	background-color: var(--mc4wp-form__BackgroundColor, rgba(0, 0, 80, .025));
+}
+
+.mailchimp-content-area--bottom .mc4wp-form {
+	padding: 0;
+	background-color: transparent;
+}
+
+.mailchimp-content-area .mc4wp-response {
+	margin-top: 2rem;
+}
+
+/* Customizer */
+/* Featured content area placeholder */
+.melina-customizer.highlight-mailchimp-content-area .mailchimp-content-area--placeholder > * {
+	z-index: 2;
+	/* Prevent ::after from preventing interactions within the section */
+}
+
+.melina-customizer.highlight-mailchimp-content-area .mailchimp-content-area--placeholder::after {
+	position: absolute;
+	/* Matches visible edit shortcuts. */
+	z-index: 1;
+	top: 0;
+	right: 1em;
+	bottom: 0;
+	left: 1em;
+	display: block;
+	content: '';
+	border: 2px dashed #0085ba;
+}
+
+.melina-customizer.highlight-mailchimp-content-area .mailchimp-content-area--bottom.mailchimp-content-area--placeholder::after {
+	top: 3em;
+	bottom: 3em;
+}
+
+/* Add some space around the visual edit shortcut button. */
+.mailchimp-content-area > .customize-partial-edit-shortcut {
+	left: 50%;
+}
+
+.mailchimp-content-area > .customize-partial-edit-shortcut > button {
+	top: -15px;
+	left: -15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.mailchimp-content-area .subscribe-box__form {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	.mailchimp-content-area .subscribe-box__form > * {
+		max-width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.mailchimp-content-area .subscribe-box__form > p {
+		margin-bottom: 0;
+	}
+	.mailchimp-content-area .subscribe-box__form > p:first-child {
+		    flex: 1;
+		margin-right: .75em;
+
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+	}
+	.mailchimp-content-area .subscribe-box__form input[type='email'] {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.mailchimp-content-area .subscribe-box {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		align-items: center;
+		-webkit-box-align: center;
+		-webkit-box-pack: justify;
+		-ms-flex-align: center;
+		-ms-flex-pack: justify;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.mailchimp-content-area .subscribe-box__text {
+		    flex: 0 0 calc(50% - var(--gap--vertical) / 2);
+		margin-bottom: 0;
+		text-align: left;
+
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 calc(50% - var(--gap--vertical) / 2);
+	}
+	.mailchimp-content-area .subscribe-box__text h4 {
+		margin-bottom: .125em;
+	}
+	.mailchimp-content-area .subscribe-box__form {
+		    flex: 0 0 calc(50% - var(--gap--vertical) / 2);
+
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 calc(50% - var(--gap--vertical) / 2);
+	}
+}

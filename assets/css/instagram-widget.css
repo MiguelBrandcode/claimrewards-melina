@@ -1,0 +1,98 @@
+/*
+Theme Name: Melina
+
+WP Instagram Widget styles override.
+*/
+.widget.null-instagram-feed ul {
+	display: grid;
+
+	grid-gap: .5em;
+	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.widget.null-instagram-feed ul.instagram-size-thumbnail {
+	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.widget.null-instagram-feed ul.instagram-size-small {
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.widget.null-instagram-feed ul.instagram-size-large,
+.widget.null-instagram-feed ul.instagram-size-original {
+	grid-template-columns: repeat(1, 100%);
+}
+
+.widget.null-instagram-feed ul li {
+	margin-bottom: 0;
+	padding-top: 0;
+	border: 0;
+}
+
+.widget.null-instagram-feed ul li img {
+	-webkit-transition: -webkit-filter .4s ease-in-out;
+	        transition: -webkit-filter .4s ease-in-out;
+	        transition:         filter .4s ease-in-out;
+	        transition:         filter .4s ease-in-out, -webkit-filter .4s ease-in-out;
+
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-filter: brightness(100%);
+	        filter: brightness(100%);
+}
+
+.widget.null-instagram-feed ul li img:hover {
+	-webkit-filter: brightness(85%);
+	        filter: brightness(85%);
+}
+
+.widget.null-instagram-feed ul:not(.children):not(.sub-menu) > li:last-child {
+	padding-bottom: 0;
+	border: 0;
+}
+
+.widget.null-instagram-feed .clear {
+	margin-top: 1em;
+	font-family: var(--headings__FontFamily);
+}
+
+.instagram-area {
+	position: relative;
+}
+
+.instagram-area .widget.null-instagram-feed .widget-title {
+	display: none;
+}
+
+.instagram-area .widget.null-instagram-feed ul {
+	grid-gap: 0;
+	grid-template-columns: repeat(2, calc(100% / 2));
+}
+
+.instagram-area .widget.null-instagram-feed .clear {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 0;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background-color: var(--white);
+}
+
+.instagram-area .widget.null-instagram-feed .clear > a {
+	display: block;
+	padding: .75em 1.5em;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+	.instagram-area .widget.null-instagram-feed ul {
+		grid-template-columns: repeat(4, calc(100% / 4));
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.instagram-area .widget.null-instagram-feed ul {
+		grid-template-columns: repeat(8, calc(100% / 8));
+	}
+}

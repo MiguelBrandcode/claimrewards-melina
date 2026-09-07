@@ -1,0 +1,265 @@
+/*
+Theme Name: Melina
+
+Developer Share Buttons styles override.
+*/
+.dev-share-buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	    flex-direction: row;
+	margin: -.2em;
+
+	-webkit-box-direction: normal;
+	-webkit-box-orient: horizontal;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.dev-share-buttons-profiles {
+	display: grid;
+
+	grid-gap: .75em;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.dev-share-buttons__item,
+.dev-share-buttons-link {
+	position: relative;
+	text-decoration: none;
+	color: var(--white);
+	background-color: var(--black);
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.dev-share-buttons__item:hover,
+.dev-share-buttons__item:focus,
+.dev-share-buttons-link:hover,
+.dev-share-buttons-link:focus {
+	opacity: .8;
+	color: var(--white);
+}
+
+.dev-share-buttons__item::before,
+.dev-share-buttons-link::before {
+	display: inline-block;
+	width: 1.25em;
+	height: 1.25em;
+	content: '\f19a';
+	text-align: center;
+	font-family: 'Font Awesome 5 Brands';
+	font-size: inherit;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	line-height: 1.25em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+}
+
+.dev-share-buttons__item--facebook,
+.dev-share-buttons-link--facebook {
+	background-color: #3b5998;
+}
+
+.dev-share-buttons__item--facebook::before,
+.dev-share-buttons-link--facebook::before {
+	content: '\f39e';
+}
+
+.dev-share-buttons__item--twitter,
+.dev-share-buttons-link--twitter {
+	background-color: #1da1f2;
+}
+
+.dev-share-buttons__item--twitter::before,
+.dev-share-buttons-link--twitter::before {
+	content: '\f099';
+}
+
+.dev-share-buttons__item--google,
+.dev-share-buttons-link--google {
+	background-color: #dc4e41;
+}
+
+.dev-share-buttons__item--google::before,
+.dev-share-buttons-link--google::before {
+	content: '\f0d5';
+}
+
+.dev-share-buttons__item--linkedin,
+.dev-share-buttons-link--linkedin {
+	background-color: #0077b5;
+}
+
+.dev-share-buttons__item--linkedin::before,
+.dev-share-buttons-link--linkedin::before {
+	content: '\f0e1';
+}
+
+.dev-share-buttons__item--youtube,
+.dev-share-buttons-link--youtube {
+	background-color: #cd201f;
+}
+
+.dev-share-buttons__item--youtube::before,
+.dev-share-buttons-link--youtube::before {
+	content: '\f167';
+}
+
+.dev-share-buttons__item--instagram,
+.dev-share-buttons-link--instagram {
+	background-color: #e4405f;
+}
+
+.dev-share-buttons__item--instagram::before,
+.dev-share-buttons-link--instagram::before {
+	content: '\f16d';
+}
+
+.dev-share-buttons__item--pinterest,
+.dev-share-buttons-link--pinterest {
+	background-color: #bd081c;
+}
+
+.dev-share-buttons__item--pinterest::before,
+.dev-share-buttons-link--pinterest::before {
+	content: '\f231';
+}
+
+.dev-share-buttons__item--github,
+.dev-share-buttons-link--github {
+	background-color: #181717;
+}
+
+.dev-share-buttons__item--github::before,
+.dev-share-buttons-link--github::before {
+	content: '\f1d3';
+}
+
+.dev-share-buttons__item--whatsapp,
+.dev-share-buttons-link--whatsapp {
+	background-color: #25d366;
+}
+
+.dev-share-buttons__item--whatsapp::before,
+.dev-share-buttons-link--whatsapp::before {
+	content: '\f232';
+}
+
+.dev-share-buttons__item--snapchat,
+.dev-share-buttons-link--snapchat {
+	color: var(--black);
+	background-color: #fffc00;
+}
+
+.dev-share-buttons__item--snapchat::before,
+.dev-share-buttons-link--snapchat::before {
+	content: '\f2ac';
+}
+
+.dev-share-buttons__item--skype,
+.dev-share-buttons-link--skype {
+	background-color: #00aff0;
+}
+
+.dev-share-buttons__item--skype::before,
+.dev-share-buttons-link--skype::before {
+	content: '\f17e';
+}
+
+.dev-share-buttons__item--reddit,
+.dev-share-buttons-link--reddit {
+	background-color: #ff4500;
+}
+
+.dev-share-buttons__item--reddit::before,
+.dev-share-buttons-link--reddit::before {
+	content: '\f281';
+}
+
+.dev-share-buttons__item--stumbleupon,
+.dev-share-buttons-link--stumbleupon {
+	background-color: #eb4924;
+}
+
+.dev-share-buttons__item--stumbleupon::before,
+.dev-share-buttons-link--stumbleupon::before {
+	content: '\f1a4';
+}
+
+.dev-share-buttons__item--wechat,
+.dev-share-buttons-link--wechat {
+	background-color: #7bb32e;
+}
+
+.dev-share-buttons__item--wechat::before,
+.dev-share-buttons-link--wechat::before {
+	content: '\f1d7';
+}
+
+.dev-share-buttons__item--medium,
+.dev-share-buttons-link--medium {
+	background-color: #1c1b1a;
+}
+
+.dev-share-buttons__item--medium::before,
+.dev-share-buttons-link--medium::before {
+	content: '\f3c7';
+}
+
+.dev-share-buttons__item--messenger,
+.dev-share-buttons-link--messenger {
+	background-color: #0084ff;
+}
+
+.dev-share-buttons__item--messenger::before,
+.dev-share-buttons-link--messenger::before {
+	content: '\f39f';
+}
+
+.dev-share-buttons__item {
+	display: inline-block;
+	margin: .2em;
+	padding: .5em;
+	text-align: center;
+}
+
+.dev-share-buttons-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: .625em .875em;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+}
+
+.dev-share-buttons-link::before {
+	margin-right: .75em;
+	text-align: left;
+}
+
+.dev-share-buttons__text {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.dev-share-buttons-link__text {
+	margin-top: 4px;
+	font-family: var(--headings__FontFamily);
+	font-size: var(--font-size--sm);
+	font-weight: var(--font-weight--base);
+}

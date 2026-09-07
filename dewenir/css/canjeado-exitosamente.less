@@ -1,0 +1,494 @@
+@import "variables.less";
+
+body.canjeado-exitosamente {
+    .wpb-content-wrapper {
+        padding: 126px 0 60px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1485px) {
+            padding-top: 63px;
+        }
+
+        @media (max-width: 999px) {
+            padding: 38px 36px;
+        }
+
+        .vc_column-inner {
+            padding: 0;
+
+            div.wpb_wrapper {
+                padding: 0;
+            }
+        }
+
+        .canjeado-exitosamente-container {
+            padding: 0 100px;
+            max-width: 1400px;
+            margin: auto;
+            margin-bottom: 77px;
+            width: 100%;
+
+            @media (max-width: 999px) {
+                padding: 0;
+                margin-bottom: 45px;
+            }
+
+            .canjeado-texto {
+                font-size: 48px;
+                font-weight: bold;
+                line-height: normal;
+                letter-spacing: 2.4px;
+                color: @kaspersky-dark;
+                text-align: center;
+                margin-bottom: 16px;
+
+                @media (max-width: 999px) {
+                    margin-bottom: 30px;
+                }
+
+                .wpb_wrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    @media (max-width: 999px) {
+                        margin-bottom: 30px;
+                        font-size: 38px;
+                        line-height: 1.21;
+                        letter-spacing: 1.9px;
+                    }
+
+                    .canjeado-exitosamente-texto {
+                        flex-direction: row;
+                        display: flex;
+                        justify-content: center;
+                        column-gap: 14px;
+                        flex-wrap: wrap;
+                        width: 100%;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .parrafo-imagen {
+                            flex-direction: row;
+                            width: max-content;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            overflow: auto;
+
+                            img {
+                                padding-left: 5px;
+                                height: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .recompensas-texto {
+                font-size: 28px;
+                font-weight: bold;
+                line-height: normal;
+                text-align: center;
+                color: @kaspersky-dark;
+
+                @media (max-width: 999px) {
+                    padding: 0;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .cards-container {
+            margin-bottom: 100px;
+            width: 100%;
+
+            .cupones-canjeados-container {
+                row-gap: 20px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 100px;
+                max-width: 1400px;
+                margin: auto;
+                margin-bottom: 77px;
+
+                @media (max-width: 999px) {
+                    padding: 0;
+                    margin-bottom: 45px;
+                }
+
+                .cupon-canjeado {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 23px 50px 19px;
+                    border-radius: 10px;
+                    box-shadow: 0 3px 5px 0 rgba(100, 98, 98, 0.35);
+                    background-color: @color-blanco;
+                    height: 136px;
+                    column-gap: 55px;
+
+                    @media (max-width: 999px) {
+                        padding: 22px 25px 20px;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: unset;
+                    }
+
+                    .proveedor-descuento-container {
+                        display: flex;
+                        width: min-content;
+
+                        @media (max-width: 999px) {
+                            justify-content: space-between;
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+
+                        @media (max-width: 429px) {
+                            flex-direction: column;
+                            align-items: center;
+                            row-gap: 30px;
+                        }
+
+                        .proveedor-container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            min-width: 180px;
+
+                            img {
+                                height: 80%;
+                                object-fit: contain;
+                                width: 100%;
+
+                                @media (max-width: 999px) {
+                                    height: 63px;
+                                }
+                            }
+
+                            .proveedor {
+                                height: 20%;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: normal;
+                                text-align: left;
+                                color: #707070;
+
+                                @media (max-width: 999px) {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .tu-descuento-container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: max-content;
+
+                            .tu-descuento-texto {
+                                font-size: 18px;
+                                font-weight: bold;
+                                line-height: normal;
+                                text-align: center;
+                                color: #3e3e3e;
+
+                                @media (max-width: 999px) {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .tu-descuento {
+                                font-size: 48px;
+                                font-weight: bold;
+                                line-height: normal;
+                                text-align: center;
+                                color: @kaspersky-dark;
+                            }
+                        }
+                    }
+
+                    .cupon-container {
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: space-between;
+                        overflow: hidden;
+                        flex-grow: 1;
+                        width: fit-content;
+
+                        @media (max-width: 999px) {
+                            width: 100%;
+                            row-gap: 9px;
+                        }
+
+                        .accede-texto {
+                            font-weight: bold;
+                            font-size: 18px;
+                            font-weight: bold;
+                            line-height: normal;
+                            color: #3e3e3e;
+                            margin-bottom: 8px;
+                        }
+
+                        .link-texto {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: normal;
+                            color: @kaspersky-dark;
+                        }
+
+                        .accede-texto {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: normal;
+                            color: #3e3e3e;
+                        }
+
+                        .cupon-btn-container {
+                            display: flex;
+                            flex-direction: row;
+                            padding: 6px 7px 6px 30px;
+                            border-radius: 5px;
+                            border: solid 1px @kaspersky-dark;
+                            background-color: #fff;
+                            align-items: center;
+
+                            @media (max-width: 999px) {
+                                padding: 6px 7px 6px 20px;
+                            }
+
+                            .cupon-texto {
+                                margin-right: auto;
+                                font-size: 18px;
+                                line-height: normal;
+                                color: #707070;
+                            }
+
+                            .btn-copiar {
+                                padding: 13px;
+                                border-radius: 5px;
+                                border: solid 1px @kaspersky-dark;
+                                background-color: @kaspersky-dark;
+                                height: 50px;
+                                width: 50px;
+                                min-width: fit-content;
+
+                                img {
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .cupon-codigo-enlace {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: normal;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+
+                            @media (max-width: 999px) {
+                                display: unset;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                margin-bottom: 15px;
+                            }
+                        }
+
+                        .cupon-codigo-texto {
+                            opacity: 1;
+                            font-size: 18px;
+                            line-height: normal;
+                            color: #707070;
+                            flex-grow: 1;
+                            display: unset;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .enlace-manual {
+                            a {
+                                font-size: 14px;
+                                font-weight: 300;
+                                line-height: normal;
+                                color: #3e3e3e;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .envio-formulario {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                max-width: 630px;
+                margin: 0 auto 15px;
+                box-sizing: content-box;
+
+                .enviamos-correo-texto {
+                    font-size: 48px;
+                    line-height: normal;
+                    font-weight: bold;
+                    letter-spacing: 2.4px;
+                    text-align: center;
+                    color: @kaspersky-dark;
+                    margin-bottom: 8px;
+
+                    @media (max-width: 999px) {
+                        font-size: 38px;
+                        line-height: 1.21;
+                        letter-spacing: 1.9px;
+                    }
+                }
+
+                .envio-correo-container {
+                    width: 100%;
+                    flex-direction: row;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+
+                    @media (max-width: 429px) {
+                        flex-direction: column;
+                    }
+
+                    input {
+                        border-radius: 5px;
+                        padding: 6px 7px 6px 30px;
+                        border: solid 1px @kaspersky-dark;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        opacity: 1;
+                        font-size: 18px;
+                        line-height: normal;
+                        color: #707070;
+                        flex-grow: 1;
+                        display: unset;
+                        white-space: nowrap;
+                        height: 58px;
+
+                        @media (max-width: 429px) {}
+                    }
+
+                    button[type="submit"] {
+                        padding: 15px 46px 15px 36px;
+                        border-radius: 5px;
+                        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+                        border: unset;
+                        width: 298px;
+                        max-width: 100%;
+                        background-color: @kaspersky-dark;
+                        box-sizing: border-box;
+                        height: 58px;
+                        clip-path: polygon(90% 100%, 100% 50%, 90% 0%, 0% 0%, 0% 100%);
+
+                        @media (max-width: 429px) {
+                            clip-path: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        .canjear-otro-container {
+            max-width: 630px;
+            margin: auto;
+            box-sizing: content-box;
+            width: 100%;
+
+            @media (max-width: 999px) {
+                padding: 0;
+            }
+
+            .mas-canjeando-container {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
+
+                @media (max-width: 999px) {
+                    margin-bottom: 30px;
+                }
+
+                .mas-codigos-texto {
+                    font-size: 48px;
+                    line-height: normal;
+                    font-weight: bold;
+                    letter-spacing: 2.4px;
+                    text-align: center;
+                    color: @kaspersky-dark;
+
+                    @media (max-width: 999px) {
+                        font-size: 38px;
+                        line-height: 1.21;
+                        letter-spacing: 1.9px;
+                    }
+                }
+
+                .sigue-canjeando-texto {
+                    font-size: 48px;
+                    font-weight: bold;
+                    line-height: normal;
+                    letter-spacing: 2.4px;
+                    text-align: center;
+                    color: @kaspersky-dark;
+
+                    @media (max-width: 999px) {
+                        font-size: 38px;
+                        line-height: 1.21;
+                        letter-spacing: 1.9px;
+                    }
+                }
+            }
+
+            .cuantos-mas-canjear-container {
+                width: 100%;
+                margin: 0;
+
+                .cuantos-mas-texto {
+                    font-size: 18px;
+                    line-height: normal;
+                    text-align: center;
+                    color: @kaspersky-dark;
+                    margin-bottom: 54px;
+                    width: 631px;
+                    margin: 0 auto 54px;
+                    width: 100%;
+                }
+
+                .canjear-otro-btn {
+                    justify-content: center;
+                    display: flex;
+
+                    .wpb_wrapper {
+                        max-width: 100%;
+
+                        button {
+                            padding: 15px 46px 15px 36px;
+                            border-radius: 5px;
+                            box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+                            background: @kaspersky-gradient;
+                            border: unset;
+                            width: 298px;
+                            height: 62px;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cupon-alerta {
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+        color: @kaspersky-dark;
+    }
+}

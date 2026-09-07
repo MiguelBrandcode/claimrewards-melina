@@ -1,0 +1,34 @@
+/*
+*	ANIMATION FUNCTIONS
+*/
+.animation (@args) {
+	-webkit-animation: 			@args;
+	-moz-animation:    			@args;
+	-ms-animation:    			@args;
+	-o-animation:    			@args;
+	animation:    			    @args;
+}
+
+.transition (@transition) {
+	-webkit-transition: 		@transition;  
+	-moz-transition:    		@transition;
+	-ms-transition:     		@transition; 
+	-o-transition:      		@transition;  
+	transition:      		    @transition;  
+}
+
+.transform(@string){
+	-webkit-transform:			@string;
+	-moz-transform: 			@string;
+	-ms-transform: 				@string;
+	-o-transform: 				@string;
+	transform: 				    @string;
+}
+
+.delay(@string){
+	-webkit-transition-delay:	@string;
+	-moz-transition-delay: 		@string;
+	-ms-transition-delay: 		@string;
+	-o-transition-delay: 		@string;
+	transition-delay: 		    @string;
+}

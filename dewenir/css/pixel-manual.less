@@ -1,0 +1,112 @@
+@import "variables.less";
+
+body.pixel-manual {
+    main {
+        article {
+            .entry__content {
+                display: flex;
+                justify-content: center;
+                background-image: linear-gradient(to right, #82efa3 0%, #009881 100%);
+                padding: 50px 15px;
+
+                .vc_column-inner {
+                    padding: 0;
+                }
+
+                form {
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 5px 5px 20px 0 rgba(0, 152, 130, 0.25);
+                    width: 100%;
+                    max-width: 600px;
+                }
+
+                .response-container {
+                    font-size: 24px !important;
+                    margin-block: 30px 15px !important;
+                    color: #009881 !important;
+                    text-decoration: underline !important;
+                }
+
+                p:nth-of-type(1) {
+                    font-size: 14px;
+                    color: #707070;
+                }
+
+                p:nth-of-type(2) {
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                label {
+                    width: 100%;
+
+                    input {
+                        border-radius: 5px;
+                        border: solid 1px #009881;
+                        background-color: #fff !important;
+                    }
+                }
+
+                input,
+                select {
+                    padding: 15px 46px 15px 36px;
+                    border-radius: 5px;
+                    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+                    border: unset;
+                    height: 62px;
+                    background-color: #009881;
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+                .wpb-content-wrapper {
+                    width: 100%;
+
+                    .vc_row-fluid {
+                        width: 100%;
+                        margin: 0;
+
+                        .wpb_wrapper {
+                            display: flex;
+                            justify-content: center;
+
+                            form {
+                                label {
+                                    margin: 0;
+                                    margin-top: .5em;
+                                }
+
+                                input,
+                                select {
+                                    background-color: white;
+                                    border-radius: 5px;
+                                    border: solid 1px #009881;
+                                }
+
+                                button {
+                                    padding: 15px 46px 15px 36px;
+                                    border-radius: 5px;
+                                    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+                                    border: unset;
+                                    height: 62px;
+                                    max-width: 100%;
+                                    background-color: #009881;
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    margin-top: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

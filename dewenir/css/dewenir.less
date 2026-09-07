@@ -1,0 +1,302 @@
+/*
+	Theme Name: Dewenir
+	Theme URI: http://dewenir.es
+
+	Author: Dewenir S.L
+	Author URI: http://www.dewenir.es
+
+	Description: Fichero base de customización del tema.
+	Version: 1.0
+*/
+
+//Importamos las variables
+@import "variables.less";
+
+//Importamos las functiones
+@import "funciones.less";
+
+@media @smartphones {}
+
+@media @tablets {}
+
+@media @smallpc {}
+
+#content-area {
+  padding: 0;
+  background-color: @bg-color;
+
+  .main-content {
+    overflow: hidden;
+
+    article {
+      padding: 0;
+      border: none;
+
+      .entry__header {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    max-width: unset;
+    grid: unset;
+    padding: 0;
+  }
+}
+
+.wpb_wrapper {
+  .wpb_content_element {
+    margin: 0;
+  }
+}
+
+*::after,
+*::before {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: @roboto;
+
+  .error-codee {
+    color: @kaspersky-dark;
+  }
+
+  button#scroll-to-top {
+    transform: translate(10px, 0);
+
+    @media (max-width: 1023px) {
+      transform: translate(10px, -10px);
+    }
+  }
+
+  .grecaptcha-badge {
+    //descomentar para cambiar lado de reCAPTCHA
+    // width: 70px !important;
+    // overflow: hidden !important;
+    // transition: all 0.3s ease !important;
+    // left: -2px !important;
+    // bottom: 20px !important;
+
+    // &:hover {
+    //     width: 256px !important;
+    // }
+
+    z-index: 0;
+    transform: translate(0px, -4px);
+  }
+
+  header {
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+    .container {
+      max-width: unset;
+      max-width: 1400px;
+      margin: auto;
+      padding: 0 36px;
+      box-sizing: content-box;
+
+      .button--menu-toggle {
+        color: @kaspersky-dark;
+        padding: 0;
+      }
+
+      #menu-primary {
+        text-transform: uppercase;
+        column-gap: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        [aria-current="page"] {
+          font-weight: bold;
+        }
+
+        [aria-current="page"] {
+          font-weight: bold;
+          align-items: start;
+        }
+
+        >li {
+          border: none;
+
+          @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          >a {
+            font-size: 15px;
+            line-height: normal;
+            letter-spacing: 0.75px;
+            color: @kaspersky-dark;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            @media (max-width: 1023px) {
+              font-weight: bold;
+            }
+          }
+
+          li {
+            border: none;
+
+            a {
+              padding: 0;
+              padding-top: 0.75em;
+            }
+          }
+
+          .sub-menu {
+            font-size: 15px;
+            line-height: normal;
+            letter-spacing: 0.75px;
+            color: @kaspersky-dark;
+            background-color: #fff;
+            padding: 1em 0.5em;
+
+            @media (max-width: 1023px) {
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          a[aria-current="page"] {
+            font-weight: bold;
+          }
+
+          button {
+            display: none;
+          }
+
+          ul {
+            display: block;
+          }
+        }
+      }
+
+      #menu-secondary {
+        display: none;
+      }
+
+      .site__branding {
+        .site__title {
+          a {
+            color: @kaspersky-dark;
+          }
+        }
+      }
+    }
+  }
+
+  #page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    #content {
+      background-color: #f8f8f8;
+      flex: 1;
+    }
+  }
+
+  .vc_column_container {
+    padding-right: unset;
+    padding-left: unset;
+  }
+
+  .entry__content {
+    padding-right: 0;
+    padding-left: 0;
+    font-family: @roboto;
+    background-color: #f8f8f8;
+
+    .wpb-content-wrapper {
+      overflow: hidden;
+    }
+  }
+
+  .footer {
+    background-image: @kaspersky-gradient;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .footer .container {
+      max-width: 1400px;
+    }
+  }
+
+  .footer .widget_block {
+
+    a,
+    p {
+      color: #fafafa;
+      line-height: normal;
+      list-style-type: none;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .empty-cupons {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: left;
+    color: #3e3e3e;
+  }
+
+  //idiomas que le den la vuelta al tema
+  &.rtl {
+    .container-background .container-formulario-cupon .container-beneficiate .ul-container-beneficiate .lista {
+      padding-right: 75px !important;
+    }
+
+    .container-background .container-formulario-cupon .container-beneficiate .ul-container-beneficiate .lista p::before {
+      right: -30px !important;
+    }
+
+    .container-background .container-formulario-cupon .container-Canjealo-aqui .input-numero-pedido {
+      text-align: end !important;
+    }
+
+    .container-form-cupones .col-container-carrito {
+      padding-left: 0 !important;
+      padding-right: 76px !important;
+    }
+
+    .container-background .container-formulario-cupon .container-Canjealo-aqui .button-form-submit .submit-ico {
+      rotate: 180deg !important;
+    }
+
+    .wpb-content-wrapper .cards-container .cupones-canjeados-container .cupon-canjeado .cupon-container .cupon-btn-container {
+      padding-left: 6px !important;
+    }
+
+    .wpb-content-wrapper .cards-container .cupones-canjeados-container .cupon-canjeado .cupon-container .cupon-btn-container .btn-copiar {
+      transform: scaleX(-1) !important;
+    }
+
+    .container-form-cupones .col-container-cupones .container-cupones .cuponForm .container-cupon .seleccionCupon .select2 {
+      margin-right: auto !important;
+      margin-left: 0 !important;
+    }
+
+    .container-form-cupones .col-container-cupones .container-cupones .cuponForm .container-cupon .textoCantidad {
+      text-align: left !important;
+    }
+
+    .container-form-cupones .col-container-cupones .container-cupones .cuponForm .container-cupon .seleccionCupon {
+      padding-left: 0 !important;
+    }
+  }
+}

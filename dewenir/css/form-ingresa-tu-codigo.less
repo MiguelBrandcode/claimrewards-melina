@@ -1,0 +1,339 @@
+@import "variables.less";
+
+body.form-ingresa-tu-codigo {
+    .container-background {
+        background-image: @kaspersky-gradient;
+        clip-path: polygon(50% 100%, 100% 90%, 100% 0%, 0% 0%, 0% 90%);
+        margin-bottom: 98px;
+        padding: 112px 0 200px;
+
+        @media (max-width: 999px) {
+            padding: 60px 0 200px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 55px;
+        }
+
+        @media (max-width: 430px) {
+            padding-bottom: 125px;
+        }
+
+        .container-formulario-cupon {
+            display: flex;
+            height: auto;
+            gap: 133px;
+            margin: auto;
+            padding: 0 36px;
+            max-width: 1400px;
+            box-sizing: content-box;
+
+            @media (max-width: 1440px) {
+                gap: 66px;
+            }
+
+            @media (max-width: 1024px) {
+                align-items: center;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            @media (max-width: 425px) {}
+
+            &::before,
+            &::after {
+                content: none;
+                display: none;
+            }
+
+            .container-beneficiate {
+                height: fit-content;
+
+                @media (max-width: 1024px) {
+                    height: fit-content;
+                    width: 100%;
+                }
+
+                .vc_column-inner {
+                    padding: 0;
+                }
+
+                .text-container-beneficiate p {
+                    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+                    font-size: 38px;
+                    font-weight: bold;
+                    color: #fafafa;
+                    height: fit-content;
+                    line-height: normal;
+
+                    @media (max-width: 430px) {
+                        font-size: 24px;
+                    }
+                }
+
+                .ul-container-beneficiate {
+
+                    font-size: 18px;
+                    color: #fafafa;
+
+                    .entrega-inmediata {
+                        font-weight: bold;
+                    }
+
+                    .lista {
+                        padding-left: 75px;
+
+                        @media (max-width: 767px) {
+                            padding-left: 30px;
+                        }
+
+                        @media (max-width: 430px) {
+                            margin-bottom: 51px;
+                        }
+
+                        p {
+                            margin: 0;
+                            margin-bottom: 20px;
+
+                            font-size: 18px;
+                            color: #fafafa;
+                            line-height: normal;
+                            list-style-type: none;
+
+                            @media (max-width: 430px) {
+                                font-size: 14px;
+                            }
+
+                            &::marker {
+                                display: none;
+                                content: none;
+                            }
+
+                            &::before {
+                                content: "";
+                                background-image: url('../../../wp-content/uploads/2024/11/check-icon-1.svg');
+                                width: 18px;
+                                height: 18px;
+                                display: flex;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                position: relative;
+                                left: -30px;
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .container-Canjealo-aqui {
+                padding: 74px 48px 82px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 20px 0 rgba(0, 152, 130, 0.25);
+                background-color: #fff;
+                height: fit-content;
+
+                @media (max-width: 1024px) {
+                    padding: 46px 29px 30px;
+                }
+
+                .text-canjealo {
+                    margin-bottom: 50px;
+
+                    font-size: 38px;
+                    font-weight: bold;
+                    color: #3e3e3e;
+                    line-height: normal;
+
+
+                    @media (max-width: 1024px) {
+                        margin-bottom: 25px;
+                    }
+
+                    @media (max-width: 430px) {
+                        font-size: 23px;
+                    }
+                }
+
+                .text-numero-pedido {
+
+                    font-size: 14px;
+                    color: #707070;
+                }
+
+                .input-numero-pedido {
+                    height: 62px;
+                    border-radius: 5px;
+                    border: solid 1px @kaspersky-dark;
+                    background-color: #fff;
+
+                    @media (max-width: 430px) {
+                        height: 37px;
+                    }
+                }
+
+                .button-form-submit {
+                    content: "";
+                    border-radius: 5px;
+                    border: solid 1px @kaspersky-dark;
+                    background-color: @kaspersky-dark;
+                    position: absolute;
+                    top: 40px;
+                    right: 7px;
+                    height: 47px;
+                    width: 47px;
+                    padding: 0;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    transition: none;
+
+                    @media (max-width: 1024px) {
+                        right: 8px;
+                    }
+
+                    @media (max-width: 430px) {
+                        height: 31px;
+                        width: 31px;
+                        top: 36px;
+                        right: 3px;
+                    }
+
+                    .submit-ico {
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../../../wp-content/uploads/2024/11/arrow2-icon-1.svg');
+                        height: 20px;
+                        width: 20px;
+
+                    }
+                }
+
+                form {
+                    margin-bottom: 34px;
+                    position: relative;
+
+                    @media (max-width: 430px) {
+                        margin-bottom: 18px;
+                    }
+                }
+
+                .text-garantia-devolucion {
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 10px;
+                    align-items: center;
+
+                    p {
+                        font-size: 18px;
+                        color: #707070;
+                        width: 100%;
+                        align-items: center;
+                        display: flex;
+                        margin: 0;
+
+                        @media (max-width: 430px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        background-image: url('../../../wp-content/uploads/2024/11/check2-icon.svg');
+                        width: 46px;
+                        height: 46px;
+                        display: flex;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        left: -10px;
+                        aspect-ratio: 1;
+
+                        @media (max-width: 430px) {
+                            height: 34px;
+                            width: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-proveedores-contenido {
+        display: flex;
+
+        .container-tarjetas-proveedores {
+            margin: auto;
+            padding: 0 36px;
+            max-width: 1400px;
+
+            .tarjetas-disponibles {
+                margin-bottom: 67px;
+
+                font-size: 24px;
+                font-weight: bold;
+                color: @kaspersky-dark;
+
+                @media (max-width: 767px) {
+                    margin-bottom: 30px;
+                }
+
+                @media (max-width: 430px) {
+                    font-size: 18px;
+                }
+            }
+
+            .container-proveedores {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px 59px;
+                padding: 0 0 30px;
+
+                @media (max-width: 1440px) {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 25px 25px;
+                }
+
+                @media (max-width: 767px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 25px 10px;
+                }
+
+                @media (max-width: 429px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .card-proveedor {
+                    padding: 15px 21px;
+                    border-radius: 10px;
+                    box-shadow: 0 3px 5px 0 rgba(100, 98, 98, 0.35);
+                    background-color: #fff;
+                    height: 100%;
+
+                    .nombre-proveedor {
+                        text-align: center;
+                        margin: 0;
+                    }
+
+                    .container-img-proveedor {
+                        margin-bottom: 14px;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 5px;
+                    }
+
+                    .nombre-proveedor {
+
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #707070;
+                    }
+                }
+            }
+        }
+    }
+}

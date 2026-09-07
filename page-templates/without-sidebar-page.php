@@ -1,0 +1,35 @@
+<?php
+/**
+ * Template Name: Page Without Sidebar
+ * Template Post Type: page
+ *
+ * The template for displaying pages without sidebar.
+ *
+ * @package Quta
+ */
+
+get_header(); ?>
+
+<div id="content-area" class="content-area">
+	<div class="container">
+		<main id="primary" class="main-content">
+
+			<?php // Start the loop.
+			while ( have_posts() ) : the_post();
+
+				// Include the page content template.
+				get_template_part( 'template-parts/page/content', 'page' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			endwhile; // End of the loop. ?>
+
+		</main><!-- #primary -->
+	</div><!-- .container -->
+</div><!-- #content-area -->
+
+<?php
+get_footer();

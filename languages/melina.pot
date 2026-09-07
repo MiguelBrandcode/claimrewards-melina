@@ -1,0 +1,945 @@
+# Copyright (C) 2018 Vladimir Kulesh
+# This file is distributed under the Themeforest Split Licence.
+msgid ""
+msgstr ""
+"Project-Id-Version: Melina 1.1.1\n"
+"Report-Msgid-Bugs-To: https://themeforest.net/user/v_kulesh\n"
+"POT-Creation-Date: 2018-12-29 09:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. %1$: comments number, %2$s: post title
+#: inc/template-tags.php:301
+#, php-format
+msgid "%1$s<span class=\"screen-reader-text\"> comments on %2$s</span>"
+msgstr ""
+
+#. number of items in the mini cart.
+#: inc/woocommerce/woocommerce-template-functions.php:41
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:66
+msgid ", "
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:285
+#, php-format
+msgid "0<span class=\"screen-reader-text\"> comments on %s</span>"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:293
+#, php-format
+msgid "1<span class=\"screen-reader-text\"> comment on %s</span>"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:126
+msgid "Accent Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:143
+msgid "Accent Hover Color"
+msgstr ""
+
+#: functions.php:318
+msgid "Add widgets here to appear before the comments on posts."
+msgstr ""
+
+#: functions.php:348 functions.php:358 functions.php:368 functions.php:378
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:328 functions.php:338
+msgid "Add widgets here to appear in your magazine page ads sidebar."
+msgstr ""
+
+#: functions.php:308
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:46
+msgid "Add widgets here to appear in your store sidebar."
+msgstr ""
+
+#: inc/customizer/sections/colors.php:24
+msgid "Base Color Scheme"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:228
+msgid "Borders Color"
+msgstr ""
+
+#: inc/mailchimp.php:74
+msgid "Bottom MailChimp Form"
+msgstr ""
+
+#: inc/customizer/sections/layout.php:34
+msgid "Boxed Layout"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:36
+msgid "Boxed Posts Carousel"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:70
+msgid "Categories "
+msgstr ""
+
+#: inc/template-tags.php:51
+msgid "Category "
+msgstr ""
+
+#. %d is the magazine page category section number
+#: inc/customizer/sections/magazine-page.php:38
+#, php-format
+msgid "Category %d"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:32
+msgid "Classic layout"
+msgstr ""
+
+#: template-parts/search-overlay.php:12 template-parts/search-overlay.php:13
+msgid "Close"
+msgstr ""
+
+#: functions.php:515
+msgid "Close Comments"
+msgstr ""
+
+#: functions.php:510
+msgid "collapse child menu"
+msgstr ""
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number.
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/theme-required-plugins.php:49
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions.php:316
+msgid "Content"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:16
+msgid "Content Area Settings"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:27
+msgid "Content Layout"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:398
+msgid "CONTENT: Text Color"
+msgstr ""
+
+#. %s: Name of current post
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:428 inc/template-tags.php:447
+#: template-parts/post/content-gallery.php:46
+#: template-parts/post/content-image.php:34 template-parts/post/content.php:34
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: functions.php:252
+msgctxt "Crimson Text font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:211
+msgid "Danger Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:584
+msgid "Default"
+msgstr ""
+
+#. 1: Theme author.
+#: inc/template-functions.php:353
+#, php-format
+msgid "Developed by %1$s"
+msgstr ""
+
+#: inc/plugins/theme-required-plugins.php:37
+msgid "Developer Share Buttons"
+msgstr ""
+
+#: inc/mailchimp.php:56 inc/mailchimp.php:80
+msgid "Disable MailChimp Form"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:69
+msgid "Disable Post Navigation"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:94
+msgid "Disable Related Posts"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:139
+msgid "Disable Sticky Sidebar"
+msgstr ""
+
+#: inc/mailchimp.php:75
+msgid "Display MailChimp Form after the main content on the front page."
+msgstr ""
+
+#: inc/mailchimp.php:51
+msgid "Display MailChimp Form before the main content on the front page."
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:64
+msgid "Display post navigation before the footer."
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:89
+msgid "Display related posts before the footer."
+msgstr ""
+
+#: inc/customizer/sections/magazine-page.php:68
+msgid "Don't display"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:33
+msgid "Don't Display Featured Content"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:188
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> %s</span>"
+msgstr ""
+
+#: inc/mailchimp.php:55 inc/mailchimp.php:79
+msgid "Enable MailChimp Form"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:68
+msgid "Enable Post Navigation"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:93
+msgid "Enable Related Posts"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:138
+msgid "Enable Sticky Sidebar"
+msgstr ""
+
+#: functions.php:509
+msgid "expand child menu"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "Featured"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:16
+msgid "Featured Area Settings"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:28
+msgid "Featured Content"
+msgstr ""
+
+#: inc/template-functions.php:163
+msgid "Featured Content Placeholder"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:35
+msgid "First large then list"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:36
+msgid "First large then list (full-width)"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:46
+msgid "First large then three-column grid (full-width)"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:41
+msgid "First large then two-column grid"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:42
+msgid "First large then two-column grid (full-width)"
+msgstr ""
+
+#: functions.php:346
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:356
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:366
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:376
+msgid "Footer 4"
+msgstr ""
+
+#: inc/customizer/sections/footer-area.php:16
+msgid "Footer Area Settings"
+msgstr ""
+
+#: inc/customizer/sections/footer-area.php:28
+msgid "Footer Copyright"
+msgstr ""
+
+#: functions.php:386
+msgid "Footer Instagram"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:415
+msgid "FOOTER: Background Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:432
+msgid "FOOTER: Borders Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:500
+msgid "FOOTER: Links Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:517
+msgid "FOOTER: Links Hover Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:466
+msgid "FOOTER: Primary Text Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:483
+msgid "FOOTER: Secondary Text Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:449
+msgid "FOOTER: Title Color"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:37
+msgid "Full Width Posts Carousel"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:38
+msgid "Full Width Posts Carousel With Transparent Header"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:34
+msgid "Full-width list layout"
+msgstr ""
+
+#: functions.php:73 functions.php:170
+#: template-parts/navigation/header-menu.php:17
+msgid "Header Menu"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:245
+msgid "HEADER: Background Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:262
+msgid "HEADER: Borders Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:313
+msgid "HEADER: Menu Links Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:330
+msgid "HEADER: Menu Links Hover Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:279
+msgid "HEADER: Site Title Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:296
+msgid "HEADER: Site Title Hover Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:347
+msgid "HEADER: Sub Menu Background Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:364
+msgid "HEADER: Sub Menu Links Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:381
+msgid "HEADER: Sub Menu Links Hover Color"
+msgstr ""
+
+#: inc/customizer/sections/footer-area.php:48
+msgid "Hide Theme Author Link"
+msgstr ""
+
+#: inc/customizer/sections/homepage.php:25
+msgid "Homepage content"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-template-functions.php:213
+msgid "Hot"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/v_kulesh"
+msgstr ""
+
+#. URI of the theme
+msgid "https://themeforest.net/user/v_kulesh/portfolio"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:177
+msgid "Info Color"
+msgstr ""
+
+#: functions.php:251
+msgctxt "Josefin Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: inc/customizer/sections/layout.php:28
+msgid "Layout Type"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:257
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:104
+#: inc/customizer/sections/content-area.php:119
+msgid "Left sidebar"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:213
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:33
+msgid "List layout"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-template-functions.php:108
+#: inc/woocommerce/woocommerce-template-functions.php:109
+msgid "Login / Register"
+msgstr ""
+
+#. If there are characters in your language that are not
+#. supported by Lora, Josefin Sans or Crimson Text, translate this to 'off'.
+#. Do not translate into your own language.
+#: functions.php:250
+msgctxt "Lora font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/customizer/sections/homepage.php:26
+msgid "Magazine page"
+msgstr ""
+
+#: functions.php:326
+msgid "Magazine Page Ads Sidebar 1"
+msgstr ""
+
+#: functions.php:336
+msgid "Magazine Page Ads Sidebar 2"
+msgstr ""
+
+#: inc/customizer/sections/magazine-page.php:17
+msgid ""
+"Magazine Page is displaying when in Homepage Settings homepage displays is "
+"set to a static page and static page displays is set to magazine page. "
+"Magazine Page displays the latest entries from the selected categories."
+msgstr ""
+
+#: inc/customizer/sections/magazine-page.php:16
+msgid "Magazine Page Settings"
+msgstr ""
+
+#: inc/template-functions.php:401
+#, php-format
+msgid "Magazine Section %1$s Placeholder"
+msgstr ""
+
+#: inc/plugins/theme-required-plugins.php:43
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: inc/mailchimp.php:108 inc/mailchimp.php:127
+msgid "MailChimp Form Placeholder"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:134
+msgid "Make the sidebar stick to the top of the window when scrolling."
+msgstr ""
+
+#. Name of the theme
+msgid "Melina"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Melina is a clean and modern WordPress theme with an elegant, carefully "
+"crafted design. This powerful, responsive blog theme is ideal for your "
+"personal or magazine-style blog, whether your passion is travel, beauty, "
+"nature, photography, architecture, DIY... the list goes on! Melina will make "
+"your WordPress look beautiful everywhere. The theme was designed with the "
+"\"mobile first\" design, meaning it was designed for mobile from the "
+"beginning and was adapted for bigger screen afterward. This result in a "
+"beautiful experience for the users, on all devices. Wide or boxed site "
+"layout, unlimited colors, magazine homepage, 5 featured area layouts, 19 "
+"different blog listing layouts, different sidebar positions, 2 custom posts "
+"layouts, 2 custom page layouts, 2 custom widgets, dozens of configurable "
+"options - and all of this you can manage with one click of your mouse in "
+"user friendly WordPress Customizer or when adding new post or page."
+msgstr ""
+
+#: inc/widgets/most-commented.php:19
+msgid "Melina Most Commented Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:19
+msgid "Melina Recent Posts"
+msgstr ""
+
+#: inc/back-compat.php:33 inc/back-compat.php:43 inc/back-compat.php:56
+#, php-format
+msgid ""
+"Melina requires at least WordPress version 4.7. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/plugins/theme-required-plugins.php:28
+msgid "Melina Theme"
+msgstr ""
+
+#: template-parts/navigation/header-menu.php:11
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:50
+msgid "Mixed three-column full-width masonry layout"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:37
+msgid "Mixed: large and list"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:38
+msgid "Mixed: large and list (full-width)"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:48
+msgid "Mixed: large and small post cards (full-width)"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:47
+msgid "Mixed: large and three-column grid (full-width)"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:43
+msgid "Mixed: large and two-column grid"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:44
+msgid "Mixed: large and two-column grid (full-width)"
+msgstr ""
+
+#: inc/widgets/most-commented.php:38
+msgid "Most Commented"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-template-functions.php:103
+#: inc/woocommerce/woocommerce-template-functions.php:104
+msgid "My Account"
+msgstr ""
+
+#: inc/template-functions.php:178
+msgid "Next"
+msgstr ""
+
+#: image.php:23
+msgid "Next Image"
+msgstr ""
+
+#: template-parts/navigation/post-navigation.php:15
+msgid "Next post"
+msgstr ""
+
+#: template-parts/navigation/post-navigation.php:16
+msgid "Next post:"
+msgstr ""
+
+#: template-parts/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/widgets/most-commented.php:118 inc/widgets/recent-posts.php:118
+msgid "Number of posts to show:"
+msgstr ""
+
+#: comments.php:33
+msgid "One Comment"
+msgstr ""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/template-functions.php:179 inc/template-functions.php:270
+msgid "Page"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:41
+msgid "Page Background Color"
+msgstr ""
+
+#. Name of the template
+msgid "Page Without Sidebar"
+msgstr ""
+
+#: inc/template-functions.php:266
+msgid "Pages:"
+msgstr ""
+
+#: image.php:80
+msgctxt "Parent post link"
+msgid ""
+"<span class=\"nav-link-meta\"><span class=\"meta-nav\">Published in</span>"
+"<span class=\"post-title\">%title</span></span>"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:63
+msgid "Post Navigation"
+msgstr ""
+
+#: inc/template-functions.php:297
+msgid "Post Navigation Placeholder"
+msgstr ""
+
+#. Name of the template
+msgid "Post Without Sidebar"
+msgstr ""
+
+#: inc/template-functions.php:177
+msgid "Previous"
+msgstr ""
+
+#: image.php:22
+msgid "Previous Image"
+msgstr ""
+
+#: template-parts/navigation/post-navigation.php:18
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/navigation/post-navigation.php:19
+msgid "Previous post:"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:75
+msgid "Primary Text Color"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/post/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/widgets/recent-posts.php:38
+msgid "Recent Posts"
+msgstr ""
+
+#: template-parts/related-posts.php:36
+#: inc/customizer/sections/content-area.php:88
+msgid "Related Posts"
+msgstr ""
+
+#: inc/template-functions.php:321
+msgid "Related Posts Placeholder"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:103
+#: inc/customizer/sections/content-area.php:118
+msgid "Right sidebar"
+msgstr ""
+
+#: template-parts/scroll-to-top.php:11 template-parts/scroll-to-top.php:12
+msgid "Scroll to top"
+msgstr ""
+
+#: template-parts/navigation/header-menu.php:30
+msgid "Search"
+msgstr ""
+
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:58
+msgid "Secondary Background Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:92
+msgid "Secondary Text Color"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:109
+msgid "Secondary Text Hover Color"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:114
+msgid ""
+"Select sidebar position. You can also delete all widgets from the sidebar to "
+"turn on \"Without sidebar\" mode."
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:99
+msgid ""
+"Select store sidebar position. You can also delete all widgets from the "
+"sidebar to turn on \"Without sidebar\" mode."
+msgstr ""
+
+#: inc/customizer/sections/magazine-page.php:39
+msgid ""
+"Select the category from which entries will be displayed on the Magazine "
+"Page."
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:28
+msgid "Select the layout to display your posts list."
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:29
+msgid "Select what type of content you want to see in featured area."
+msgstr ""
+
+#: inc/customizer/sections/layout.php:29
+msgid "Select what type of layout you want to use in your site."
+msgstr ""
+
+#: functions.php:514
+msgid "Show Comments"
+msgstr ""
+
+#: functions.php:306
+msgid "Sidebar"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:98
+#: inc/customizer/sections/content-area.php:113
+msgid "Sidebar Position"
+msgstr ""
+
+#: functions.php:388
+msgid "Simple add a single widget using \"WP Instagram Widget\" plugin."
+msgstr ""
+
+#: inc/customizer/sections/layout.php:16
+msgid "Site Layout"
+msgstr ""
+
+#: inc/template-functions.php:132
+msgid "Skip to content"
+msgstr ""
+
+#: template-parts/navigation/social-menu.php:10
+msgid "Social Links Menu"
+msgstr ""
+
+#: functions.php:74 functions.php:180
+msgid "Social Menu"
+msgstr ""
+
+#: template-parts/post/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:133
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:84
+msgid "Store Sidebar"
+msgstr ""
+
+#: searchform.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:160
+msgid "Success Color"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:34
+msgid "Tagline and Header Image"
+msgstr ""
+
+#: 404.php:22 template-parts/post/content-none.php:45
+msgid ""
+"The page you were looking for cannot be found, it may have been moved or no "
+"longer exists. Perhaps searching can help."
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:45
+msgid "Three-column full-width grid layout"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:49
+msgid "Three-column full-width masonry layout"
+msgstr ""
+
+#: inc/widgets/most-commented.php:115 inc/widgets/recent-posts.php:115
+msgid "Title:"
+msgstr ""
+
+#: inc/mailchimp.php:50
+msgid "Top MailChimp Form"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:39
+msgid "Two-column grid layout"
+msgstr ""
+
+#: inc/customizer/sections/content-area.php:40
+msgid "Two-column grid layout (full-width)"
+msgstr ""
+
+#: inc/widgets/most-commented.php:21
+msgid ""
+"Use this widget to list your most commented posts. Well-suited to display in "
+"the sidebar."
+msgstr ""
+
+#: inc/widgets/recent-posts.php:21
+msgid ""
+"Use this widget to list your recent posts. Well-suited to display in the "
+"sidebar."
+msgstr ""
+
+#: image.php:68
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#: inc/template-tags.php:168
+msgctxt "Used before post date."
+msgid "Posted on "
+msgstr ""
+
+#: inc/template-tags.php:136
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: inc/template-tags.php:217
+msgctxt "Used before tag names."
+msgid "Tags:"
+msgstr ""
+
+#: template-parts/magazine/magazine-section-1.php:46
+#: template-parts/magazine/magazine-section-2.php:46
+#: template-parts/magazine/magazine-section-3.php:46
+#: template-parts/magazine/magazine-section-5.php:46
+#: template-parts/magazine/magazine-section-6.php:45
+#: template-parts/magazine/magazine-section-7.php:46
+msgid "View All"
+msgstr ""
+
+#: template-parts/post/author-info.php:25
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/woocommerce/woocommerce-template-functions.php:37
+msgid "View your shopping cart"
+msgstr ""
+
+#. Author of the theme
+msgid "Vladimir Kulesh"
+msgstr ""
+
+#: inc/customizer/sections/colors.php:194
+msgid "Warning Color"
+msgstr ""
+
+#: inc/customizer/sections/layout.php:33
+msgid "Wide Layout"
+msgstr ""
+
+#: inc/customizer/sections/featured-area.php:35
+msgid "Wide Posts Carousel"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:105
+#: inc/customizer/sections/content-area.php:120
+msgid "Without sidebar"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:44
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: inc/plugins/theme-required-plugins.php:55
+msgid "WP Instagram Widget"
+msgstr ""
+
+#: inc/customizer/sections/footer-area.php:29
+msgid "You can change footer copyright and use your own custom text from here."
+msgstr ""
+
+#: inc/customizer/sections/homepage.php:21
+msgid "Your static page displays"
+msgstr ""
+
+#: template-parts/footer/footer-copyright.php:8
+#: inc/customizer/sections/footer-area.php:22
+msgid "©2018. All rights reserved"
+msgstr ""

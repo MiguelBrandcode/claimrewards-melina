@@ -1,0 +1,66 @@
+/*
+Theme Name: Melina
+
+Contact Form 7 styles override.
+*/
+.wpcf7-form {
+	overflow: hidden;
+	padding-bottom: 1em;
+}
+
+.wpcf7-form > p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wpcf7-form-control {
+	margin-top: .5em;
+}
+
+input.wpcf7-submit[type='submit'] {
+	margin-top: 0;
+	margin-right: 1em;
+	-webkit-box-shadow: 0 14px 13px -15px var(--button__BackgroundColor);
+	        box-shadow: 0 14px 13px -15px var(--button__BackgroundColor);
+}
+
+input.wpcf7-submit[type='submit']:hover,
+input.wpcf7-submit[type='submit']:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.wpcf7-form-control-wrap.your-name,
+.wpcf7-form-control-wrap.your-email,
+.wpcf7-form-control-wrap.your-subject {
+	display: block;
+}
+
+.wpcf7-form-control-wrap.your-name .wpcf7-form-control,
+.wpcf7-form-control-wrap.your-email .wpcf7-form-control,
+.wpcf7-form-control-wrap.your-subject .wpcf7-form-control {
+	max-width: 344px;
+}
+
+span.wpcf7-not-valid-tip {
+	margin-top: .75em;
+	color: var(--danger__Color);
+	font-size: var(--font-size--sm);
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0;
+	padding: .75em 1.5em 1em;
+	color: var(--text--primary__Color);
+	border-color: var(--success__Color);
+	background-color: var(--site__BackgroundColor);
+	font-size: var(--font-size--base);
+}
+
+div.wpcf7-response-output:last-child {
+	margin-bottom: 0;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+	border-color: var(--warning__Color);
+}

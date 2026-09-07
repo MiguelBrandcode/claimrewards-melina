@@ -1,0 +1,73 @@
+/*
+	Theme Name: Dewenir
+	Theme URI: http://dewenir.es
+
+	Author: Dewenir S.L
+	Author URI: http://www.dewenir.es
+
+	Description: Fichero base de customización del tema.
+	Version: 1.0
+*/
+
+/* Rutas */
+// @base-url: "https://redenciones.dewenir.es/";
+@base-url: "https://www.kaspersky-gifts.com/";
+@dewenir-url: "@{base-url}/wp-content/themes/salient/dewenir";
+@images-url: "@{dewenir-url}/resources/";
+@fonts-url: "@{dewenir-url}/fonts/";
+
+@font-face {
+	font-family: 'OptimaNova';
+	src:
+		url('@{fonts-url}OptimaNovaLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('@{fonts-url}OptimaNovaLTPro-Regular.otf') format('opentype'),
+		url('@{fonts-url}OptimaNovaLTPro-Regular.woff') format('woff'),
+		url('@{fonts-url}OptimaNovaLTPro-Regular.ttf') format('truetype'),
+		url('@{fonts-url}OptimaNovaLTPro-Regular.svg#OptimaNovaLTPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Colores */
+@color-marron:  #b0a797;
+@color-negro:   #000;
+@color-blanco:  #FFF;
+@bg-body: #f8f8f8;
+@kaspersky-light: #82efa3;
+@kaspersky-dark: #009881;
+
+@kaspersky-gradient: linear-gradient(to right, @kaspersky-light 0%, @kaspersky-dark 100%);
+@kaspersky-gradient-diagonal: linear-gradient(160deg, @kaspersky-light 0%, @kaspersky-dark 100%);
+
+:root {
+    --accent--hover__Color: #009881;
+    --accent__Color: #009881;
+	--header-menu-link__Color: #009881;
+}
+
+/* Fuentes */
+@optima:        'OptimaNova', sans-serif;
+@montserrat:    'Montserrat', sans-serif;
+@roboto:		'Roboto', sans-serif;
+@material:      'Material Icons';
+
+@font-light:        300;
+@font-regular:      400;
+@font-medium:       500;
+@font-semi-bold:    600;
+@font-bold:         700;
+@font-black:        900;
+
+:root {
+    --headings__FontFamily: @roboto;
+    --font-family--base: @roboto;
+    --content-text__FontFamily: @roboto;
+    --entry-headings__FontFamily: @roboto;
+}
+
+/* Media query */
+@smartphones:   ~"(max-width: 768px)";
+@tablets:       ~"(max-width: 992px)";
+@smallpc:       ~"(max-width: 1024px)";
+@min1200:       ~"(min-width: 1200px)";
+@salient:       ~"(min-width: 1000px)";
