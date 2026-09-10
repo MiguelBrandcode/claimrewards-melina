@@ -131,6 +131,7 @@ if (isset($_POST['enviar'])) {
         $cliente = get_posts($args);
         $idCliente =  $cliente[0]->ID;
         $client_name = $cliente[0]->post_title;
+        $partner = get_field('partner', $idCliente);
 
         foreach ($cuponesSaneados as $codCupon => $cantidad) {
             for ($i = 0; $i < $cantidad; $i++) {
@@ -142,7 +143,7 @@ if (isset($_POST['enviar'])) {
                     $codCupon = implode('-', $partes);
                 }
 
-                $licenceCode = getCupones($codCupon);
+                $licenceCode = getCupones($codCupon, $partner);
 
                 if ($licenceCode == null) {
                     $error = true;
@@ -188,7 +189,7 @@ if (isset($_POST['enviar'])) {
         echo ("<script>window.location.href = '" . $redirect . "'</script>");
     }
 
-    function getCupones($skuSingular)
+    function getCupones($skuSingular, $partner = '')
     {
         $url = 'https://admin.singularmarketplace.com/api/v2/orders/';
         $data = [
@@ -196,7 +197,8 @@ if (isset($_POST['enviar'])) {
             "first_name" => $_SESSION['user'],
             "last_name" => '',
             "email" => "orderID@redenciones.com",
-            "website" => "Cupones"
+            "website" => "ClaimRewards",
+            "partner" => $partner,
         ];
 
         $ch = curl_init();

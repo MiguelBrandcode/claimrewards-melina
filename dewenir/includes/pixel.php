@@ -17,6 +17,11 @@ add_action('rest_api_init', function () {
                 'required' => true,
                 'type' => 'string',
             ],
+            'partner' => [
+                'required' => false,
+                'type' => 'string',
+                'default' => '',
+            ],
         ]
     ));
 });
@@ -151,7 +156,7 @@ function get_product($sku)
     return reset($posts);
 }
 
-function process_client_registration($sku, $order, $entryDate = null, $manual = false)
+function process_client_registration($sku, $order, $entryDate = null, $manual = false, $partner = '')
 {
 
     require_once(ABSPATH . 'wp-admin/includes/post.php');
@@ -211,6 +216,7 @@ function process_client_registration($sku, $order, $entryDate = null, $manual = 
     $date_of_entry = (isset($entryDate)) ? $entryDate : strtotime('now');
 
     update_field('sku', $sku, $client_id);
+    update_field('partner', $partner, $client_id);
     update_field('pais', $country, $client_id);
     update_field('saldo_cliente', $balance, $client_id);
     update_field('fecha_ingreso', $date_of_entry, $client_id);
@@ -269,8 +275,9 @@ function add_client(WP_REST_Request $request)
 {
     $sku = $request->get_param('sku');
     $order = $request->get_param('order');
+    $partner = $request->get_param('partner');
 
-    return process_client_registration($sku, $order);
+    return process_client_registration($sku, $order, null, false, $partner);
 }
 
 // PIXEL MANUAL
@@ -280,8 +287,9 @@ function save_client($post)
 
     $order = $_POST['order-id'];
     $entryDate = $_POST['entry-date'];
+    $partner = $_POST['partner'] ?? '';
 
-    return process_client_registration($sku, $order, $entryDate, true);
+    return process_client_registration($sku, $order, $entryDate, true, $partner);
 }
 
 // CANCELAR CLIENTE

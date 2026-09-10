@@ -17,6 +17,9 @@ include(locate_template('dewenir/includes/data/countries.php'));
     <label class="text-sku" for="sku"><?php _e('SKU: ', 'dewenir'); ?></label>
     <input class="input-sku" type="text" id="sku" name="sku" value="" required>
 
+    <label class="text-partner" for="partner"><?php _e('Partner: ', 'dewenir'); ?></label>
+    <input class="input-partner" type="text" id="partner" name="partner" value="">
+
     <label class="text-pais" for="pais"><?php _e('Country: ', 'dewenir'); ?></label>
     <select name="pais" id="pais">
 
